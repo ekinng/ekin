@@ -9,77 +9,75 @@
     
   
      <style>
-a{ 
-  font-size: 16px;
+a{
+  font-size: 40px;
   border: 3px solid black;
-  padding: 10px 20px;
+  padding: 15px;
   text-decoration: none;
-    text-align:center;
   background-color: rgb(99, 213, 88);
   color: aliceblue;
   border-radius: 40px;
   box-shadow: 10px 10px 12px gray;
-    width:45%
-    margin:5px;
-    flex-grow:1;
 }
 a:hover{
   background-color: hotpink;
   color: aliceblue;
 }
 
-.buton1{ 
-  left: 5%;
-  top: 25%; !impotant;
-max-width:90% !impotant}
+.buton1{ position: absolute;
+  left: 470px;
+  top: 650px;}
 
   .buton2{
-    display:inline-block;
-      left:60% !impotant;
-top: 60%;
+    position: absolute;
+  left: 870px;
+top: 650px;
 background-color: red;}
 
 body{ background-color: rgb(120, 228, 250);}
 
-.gif{
-  left: 20%;}
+.gif{position: absolute;
+  left: 500px;
+top: 100px;}
 
   .yazi{
-  
+ position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 5% !important;
-      font-size:0.5em !important;
+  top: 20px;
 
   color: hotpink;}
-.container{display:flex;
-           flex-wrap:wrap;
-           justify-content:space-around;}
-           .item{width:30%; box-sizing:border-box;}
-         .ana-icerik-kapsayıcı{display:flex; flex-direction:column;align-items:center;min-height:100vh;}
-                               .buton-kapsayici{display:flex;justify-content:space-around;align-items:center;width:80%;margin-top:30px;
-                                                
-                               
+  @media(max-witdh:768px){
+    .yazi{top: 0%;
+  z-index:10!important;
+  left:50% !important;
+  transform: translateX(-50%) !important;
+  width: 95% !important;
+  text-align: center !important;}
 
-
+.buton1,.buton2{top:55% !important;
+padding: 5px 10px !important;}
+.buton1{left: 20% !important;}
+.buton2 {left: 60% !important}
+}
      </style>
 
 
     
     
 
-
+<link rel="stylesheet" href="style.css">
 
 </head>
 <body>
   
-<div class="yazi"> <i> <h1> BENİ ÇOK ÖZLEDİĞİNİ BİLİYORUM İNKAR ETMEZSİN DİMİ??</h1> </i> </div>
+<div class="yazi"> <i> <h4> BENİ ÇOK ÖZLEDİĞİNİ BİLİYORUM
+   İNKAR ETMEZSİN DİMİ??</h4> </i> </div>
 <div>
 
-<img src="hug.gif"
+<img src="resimler/hug.gif"
 max-width:100%;
 height:auto;
-    display:block;
 class="gif"/>
 
 <a class="buton1" href="https://ekinng.github.io/ekinberkin/">EVET</a>
@@ -90,7 +88,7 @@ class="gif"/>
 
 <script>
   var counter=0,buton2,xpos,ypos;
-  buton2=document.querySelector('.buton2');
+  buton2=document.querySelector(".buton2");
 
   buton2.onmouseover=function(){
     counter++;
@@ -99,10 +97,12 @@ class="gif"/>
     buton2.style.left=xpos+"px";
     buton2.style.top=ypos+"px";}
    
-  
+   
 </script>
 </body>
 </html>
+
+
 
 
 
