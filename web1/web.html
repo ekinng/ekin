@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ekin</title>
+   
+    
+  
+     <style>
+a{
+  font-size: 40px;
+  border: 3px solid black;
+  padding: 15px;
+  text-decoration: none;
+  background-color: rgb(99, 213, 88);
+  color: aliceblue;
+  border-radius: 40px;
+  box-shadow: 10px 10px 12px gray;
+}
+a:hover{
+  background-color: hotpink;
+  color: aliceblue;
+}
+
+.buton1{ position: absolute;
+  left: 470px;
+  top: 650px;}
+
+  .buton2{
+    position: absolute;
+  left: 870px;
+top: 650px;
+background-color: red;}
+
+body{ background-color: rgb(120, 228, 250);}
+
+.gif{position: absolute;
+  left: 450px;}
+
+  .yazi{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 10%;
+
+  color: hotpink;}
+
+
+
+     </style>
+
+
+    
+    
+
+
+
+</head>
+<body>
+  
+<div class="yazi"> <i> <h1> BENİ ÇOK ÖZLEDİĞİNİ BİLİYORUM İNKAR ETMEZSİN DİMİ??</h1> </i> </div>
+<div>
+
+<img src="resimler/hug.gif"
+width="500" 
+height="500" 
+class="gif"/>
+
+<a class="buton1" href="ikinci.sitem/Untitled-1.html">EVET</a>
+<a class="buton2" href="">HAYIR</a>
+</div>
+
+
+
+<script>
+  var counter=0,buton2,xpos,ypos;
+  buton2=document.querySelector('.buton2');
+
+  buton2.onmouseover=function(){
+    counter++;
+    xpos=parseInt(Math.random()*1000);
+    ypos=parseInt(Math.random()*800);
+    buton2.style.left=xpos+"px";
+    buton2.style.top=ypos+"px";}
+   
+   
+</script>
+</body>
+</html>
