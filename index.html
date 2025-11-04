@@ -115,7 +115,7 @@ class="gif"/>
 
 
 <script>
-  var counter=0,buton2,xpos,ypos;
+ var counter=0,buton2,xpos,ypos;
   buton2=document.querySelector(".buton2");
 
   buton2.onmouseover=function(){
@@ -125,19 +125,14 @@ class="gif"/>
     buton2.style.left=xpos+"px";
     buton2.style.top=ypos+"px";};
 
-    buton2.ontouchstart=function(){
-            xpos=parseInt(Math.random()*1000);
-    ypos=parseInt(Math.random()*800);
-
-      counter++;
+  buton2.onmouseover = hareketEttir;
+buton2.ontouchstart=hareketEttir;
     
-    buton2.style.left=xpos+"px";
-    buton2.style.top=ypos+"px";
-    }
    
 </script>
 </body>
 </html>
+
 
 
 
