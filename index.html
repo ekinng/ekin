@@ -119,9 +119,13 @@ class="gif"/>
   buton2=document.querySelector(".buton2");
 
  function kacti(){
+  
+var maxX=window.innerWidth-buton2.clientWidth;
+    var maxY=window.innerHeight-buton2.clientHeight;
+    xpos=Math.floor(Math.random()*maxX);
+    ypos=Math.floor(Math.random()*maxY);
     counter++;
-    xpos=parseInt(Math.random()*1000);
-    ypos=parseInt(Math.random()*800);
+  
     buton2.style.left=xpos+"px";
     buton2.style.top=ypos+"px";}
 
@@ -134,6 +138,7 @@ buton2.onclick=kacti;
 </script>
 </body>
 </html>
+
 
 
 
