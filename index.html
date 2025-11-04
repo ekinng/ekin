@@ -24,15 +24,14 @@ a:hover{
   color: aliceblue;
 }
 
-.buton1{ position: absolute;
-  left: 470px;
-  top: 650px;}
+.buton1{ position: fixed;
+  left: 5%;
+  top: 60%;}
 
   .buton2{
-    position: absolute;
-  left: 870px;
-top: 650px;
-background-color: red;}
+    position: fixed;
+  left: 10%;
+top: 60%;
 
 body{ background-color: rgb(120, 228, 250);}
 
@@ -122,12 +121,13 @@ class="gif"/>
   
 var maxX=window.innerWidth-buton2.clientWidth;
     var maxY=window.innerHeight-buton2.clientHeight;
-    xpos=Math.floor(Math.random()*maxX);
-    ypos=Math.floor(Math.random()*maxY);
-    counter++;
+    xpos=Math.floor(Math.random()*800);
+    ypos=Math.floor(Math.random()*600);
+    
   
     buton2.style.left=xpos+"px";
-    buton2.style.top=ypos+"px";}
+    buton2.style.top=ypos+"px";
+  counter++;}
 
   buton2.onmouseover = kacti;
     buton2.ontouchstart=kacti;
@@ -138,6 +138,7 @@ buton2.onclick=kacti;
 </script>
 </body>
 </html>
+
 
 
 
