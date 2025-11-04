@@ -118,20 +118,21 @@ class="gif"/>
  var counter=0,buton2,xpos,ypos;
   buton2=document.querySelector(".buton2");
 
-  buton2.onmouseover=function(){
+  buton2.onmouseover=function kacti(){
     counter++;
     xpos=parseInt(Math.random()*1000);
     ypos=parseInt(Math.random()*800);
     buton2.style.left=xpos+"px";
     buton2.style.top=ypos+"px";};
 
-  buton2.onmouseover = hareketEttir;
-buton2.ontouchstart=hareketEttir;
+  buton2.onmouseover = kacti;
+buton2.onclick=kacti;
     
    
 </script>
 </body>
 </html>
+
 
 
 
